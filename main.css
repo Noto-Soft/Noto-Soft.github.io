@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+    font-family: "Roboto Slab";
+    color: white;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(5, 5, 5);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 40px;
+}
+
+menu.nav-links {
+    height: 100%;
+    width: 100%;
+    padding-inline-start: 0px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+a.nav-link {
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    align-items: center;
+    text-decoration-line: none;
+    font-size: medium;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration-line: none;
+}
+
+a.nav-link:hover {
+    background-color: rgb(43, 43, 43);
+}
+
+a.nav-title {
+    font-size: x-large;
+    font-weight: 500;
+}
+
+main a {
+    font-style: italic;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+a.nav-title:hover {
+    background-color: revert;
+}
+
+header {
+    background-color: rgb(15, 15, 15);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;
+    font-size: 56pt;
+    text-shadow: 0 0 21px;
+}
+
+main {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(10, 10, 10);
+}
+
+section {
+    margin-top: 1.5em;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: gray;
+    font-size: smaller;
+}
+
+.alternating > span.a {
+    color: blue;
+}
+
+.alternating > span.b {
+    color: magenta;
+}
+
+.alternating > span.c {
+    color: red;
+}
+
+section .sectionheader {
+    font-size: 24pt;
+}
