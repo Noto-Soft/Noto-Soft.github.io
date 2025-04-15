@@ -10,29 +10,25 @@ html, body {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0px;
     background-color: rgb(5, 5, 5);
 }
 
 nav {
-    display: flex;
-    align-items: center;
     background-color: rgb(20, 20, 20);
     padding-left: 6px;
     padding-right: 6px;
     height: 40px;
-}
-
-menu.nav-links {
-    height: 100%;
-    width: 100%;
     padding-inline-start: 0px;
     display: flex;
     justify-content: center;
     list-style-type: none;
 }
 
-a.nav-link {
+nav a {
     padding-left: 1em;
     padding-right: 1em;
     display: flex;
@@ -46,17 +42,22 @@ a:link, a:visited {
     text-decoration-line: none;
 }
 
-a.nav-link:hover {
+nav a:hover {
     background-color: rgb(43, 43, 43);
 }
 
-a.nav-title {
+nav a:active {
+    background-color: rgb(17, 17, 17);
+}
+
+nav a.nav-title {
     font-size: x-large;
     font-weight: 500;
 }
 
 main a {
     font-style: italic;
+    color: rgb(211, 136, 255);
 }
 
 main a:hover {
@@ -80,36 +81,67 @@ header {
 
 main {
     margin: 10px;
+    flex: 1 0 auto;
+}
+
+section.content-block {
     padding: 5px;
     background-color: rgb(10, 10, 10);
 }
 
-section {
+section.content-block > section {
     margin-top: 1.5em;
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     text-align: center;
     color: gray;
     font-size: smaller;
+    min-height: 1em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    background-color: #010101;
+    line-height: 1.8em;
 }
 
-.alternating > span.a {
+.alternating:not(.nav-title) > span.a,
+.nav-title.alternating:hover > span.a {
     color: blue;
 }
 
-.alternating > span.b {
+.alternating:not(.nav-title) > span.b,
+.nav-title.alternating:hover > span.b {
     color: magenta;
 }
 
-.alternating > span.c {
+.alternating:not(.nav-title) > span.c,
+.nav-title.alternating:hover > span.c {
     color: red;
+}
+
+.nav-title.alternating:hover {
+    text-shadow: 0 0 7px;
 }
 
 section .sectionheader {
     font-size: 24pt;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 7px;
+    border: 0px;
+    background-color: rgb(132, 0, 255);
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(156, 49, 255);
+}
+
+button:active {
+    background-color: rgb(103, 0, 199);
 }
