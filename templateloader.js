@@ -1,2 +1,2 @@
-$("nav").load("templates.html #nav")
-$("footer").load("templates.html #footer")
+$("nav").load("/templates.html #nav")
+$("footer").load("/templates.html #footer")
