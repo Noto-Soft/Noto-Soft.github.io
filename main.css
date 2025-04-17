@@ -105,22 +105,22 @@ footer {
     line-height: 1.8em;
 }
 
-.alternating > span.a,
-.hoveralternating:hover > span.a {
+.alternating:not(.hoveralternating) > span.a,
+.alternating.hoveralternating:hover > span.a {
     color: blue;
 }
 
-.alternating > span.b,
-.hoveralternating:hover > span.b {
+.alternating:not(.hoveralternating) > span.b,
+.alternating.hoveralternating:hover > span.b {
     color: magenta;
 }
 
-.alternating > span.c,
-.hoveralternating:hover > span.c {
+.alternating:not(.hoveralternating) > span.c,
+.alternating.hoveralternating:hover > span.c {
     color: red;
 }
 
-.hoveralternating:hover {
+.nav-title:hover {
     text-shadow: 0 0 7px;
 }
 
