@@ -6,7 +6,7 @@ $("nav").html(`
 $("footer").html(`
 <button onclick="redirect('/contact.html');">Contact Us</button>
 <button onclick="redirect('https://github.com/Noto-Soft');">Our Github</button>
-<br /><span class="alternating">Noto-Soft</span> 2025
+<br />2025 <span class="alternating">Noto-Soft</span> Solutions
 `);
 $("head").prepend(`
 <link rel="icon" href="/favicon.png" type="image/png">
