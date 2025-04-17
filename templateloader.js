@@ -1,5 +1,5 @@
 $("nav").html(`
-<a href="/index.html" class="nav-title alternating">Noto-Soft</a>
+<a href="/index.html" class="nav-title alternating hoveralternating">Noto-Soft</a>
 <a href="/projects.html">Projects</a>
 <a href="/contact.html">Contact Us</a>
 `);
