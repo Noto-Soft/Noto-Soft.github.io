@@ -131,7 +131,8 @@ section .sectionheader {
 button {
     font-family: inherit;
     font-size: inherit;
-    border-radius: 7px;
+    min-width: 7em;
+    border-radius: 9999999px;
     border: 0px;
     background-color: rgb(132, 0, 255);
     color: white;
