@@ -105,22 +105,22 @@ footer {
     line-height: 1.8em;
 }
 
-.alternating:not(.nav-title) > span.a,
-.nav-title.alternating:hover > span.a {
+.alternating:not(.hoveralternating) > span.a,
+.alternating.hoveralternating:hover > span.a {
     color: blue;
 }
 
-.alternating:not(.nav-title) > span.b,
-.nav-title.alternating:hover > span.b {
+.alternating:not(.hoveralternating) > span.b,
+.alternating.hoveralternating:hover > span.b {
     color: magenta;
 }
 
-.alternating:not(.nav-title) > span.c,
-.nav-title.alternating:hover > span.c {
+.alternating:not(.hoveralternating) > span.c,
+.alternating.hoveralternating:hover > span.c {
     color: red;
 }
 
-.nav-title.alternating:hover {
+.nav-title:hover {
     text-shadow: 0 0 7px;
 }
 
@@ -131,7 +131,8 @@ section .sectionheader {
 button {
     font-family: inherit;
     font-size: inherit;
-    border-radius: 7px;
+    min-width: 7em;
+    border-radius: 9999999px;
     border: 0px;
     background-color: rgb(132, 0, 255);
     color: white;
