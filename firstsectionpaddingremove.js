@@ -1,1 +1,0 @@
-$("main > section.content-block > section").first().css("margin-top", "0px");
